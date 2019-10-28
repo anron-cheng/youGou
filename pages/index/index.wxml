@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="box">
+  <!-- 搜索栏 -->
+  <view class="search">
+    <view>
+      <text class="iconfont iconsearch"></text>
+      <text>搜索</text>
+    </view>
+  </view>
+  <!-- 轮播图 -->
+  <view class="slide">
+    <view class="container">
+      <view class="page-body">
+        <view class="page-section page-section-spacing swiper">
+          <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+            <block wx:for="{{background}}" wx:key="{{index}}">
+              <swiper-item>
+                <image class="swiper-item" src="{{item.image_src}}" mode="aspactFill"></image>
+              </swiper-item>
+            </block>
+          </swiper>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
