@@ -1,0 +1,8 @@
+  <!-- 搜索栏 -->
+  <search/>
+  <!-- 侧边栏 -->
+  <view class="nav_box">
+    <view class="nav">
+      大家电
+    </view>
+  </view>

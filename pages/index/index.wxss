@@ -1,24 +1,55 @@
 /**index.wxss**/
-.search{
-  background-color: red;
-  padding: 36rpx 16rpx ;
-}
-.search>view{
-  display: flex;
-  justify-content:center;
-  align-items: center;
-  height: 60rpx;
-  padding: 0 16rpx;
-  border-radius: 5px; 
-  background-color: white;
-  color: #999;
-  font-size: 24rpx;
-}
 .slide{
-  height: 340rpx;
+  /* height: 340rpx; */
   width: 100%;
 }
-.slide>view{
-  height: 100%;
-  width:100%
+.swiper-item{
+  width: 100%;
 }
+.nav{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx;
+}
+.nav_img{
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50px;
+}
+/* 分类盒子 */
+.classify_box{
+  margin-top: 30rpx;
+}
+.classify_title{
+  height: 58rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+  padding-top: 30rpx;
+  background-color: #f4f4f4;
+}
+.classify{
+  display: flex;
+  padding: 0 17rpx;
+}
+.classify_name{
+  width: 232rpx;
+}
+
+.classify_r{
+  display: flex;
+  flex-wrap: wrap;
+}
+.classify_l>navigator{
+  height: 100%;
+}
+.classify_l .classify_name{
+  height: 100%;
+}
+.classify_r .classify_name{
+  height: 188rpx;
+  margin: 0 0 10rpx 10rpx;
+}
+.classify_r .classify_name:last-child,.classify_r .classify_name:nth-child(3){
+   margin-bottom: 0!important;
+}
+

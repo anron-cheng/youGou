@@ -1,12 +1,7 @@
 <!--index.wxml-->
 <view class="box">
   <!-- 搜索栏 -->
-  <view class="search">
-    <view>
-      <text class="iconfont iconsearch"></text>
-      <text>搜索</text>
-    </view>
-  </view>
+  <search/>
   <!-- 轮播图 -->
   <view class="slide">
     <view class="container">
@@ -15,11 +10,35 @@
           <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
             <block wx:for="{{background}}" wx:key="{{index}}">
               <swiper-item>
-                <image class="swiper-item" src="{{item.image_src}}" mode="aspactFill"></image>
+                <image class="swiper-item" src="{{item.image_src}}" mode='widthFix'></image>
               </swiper-item>
             </block>
           </swiper>
         </view>
+      </view>
+    </view>
+  </view>
+  <!-- 导航栏 -->
+  <view class="nav">
+    <image class="nav_img" wx:for="{{nav}}" wx:key='{{index}}' src="{{item.image_src}}"></image>
+  </view>
+  <!-- 分类标题 -->
+  <view class="classify_box" wx:for="{{floorData}}" wx:key="{{index}}">
+    <image class="classify_title" src="{{item.floor_title.image_src}}"></image>
+
+    <!-- 标题 -->
+    <view class="classify">
+
+      <view class="classify_l">
+        <navigator wx:for="{{item.product_list}}" wx:key="{{index}}" url="{{item.navigator_url}}" wx:if="{{index==0}}">
+          <image class="classify_name" src="{{item.image_src}}"></image>
+        </navigator>
+      </view>
+
+      <view class="classify_r">
+        <navigator wx:for="{{item.product_list}}" wx:key="{{index}}" url="{{item.navigator_url}}" wx:if="{{index>0}}">
+          <image class="classify_name" src="{{item.image_src}}"></image>
+        </navigator>
       </view>
     </view>
   </view>

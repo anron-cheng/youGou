@@ -1,0 +1,11 @@
+/* pages/category/index.wxss */
+/* 导航栏 */
+.nav_box{
+  width: 198rpx;
+  height: 100rpx;
+  background-color: #f4f4f4;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 26rpx;
+  font-weight: 500;
+}
