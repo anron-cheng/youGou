@@ -1,8 +1,24 @@
-  <!-- 搜索栏 -->
-  <search/>
-  <!-- 侧边栏 -->
-  <view class="nav_box">
-    <view class="nav">
-      大家电
+<!-- 搜索栏 -->
+<search/>
+<!-- 侧边栏 -->
+<view class="category_box">
+  <view class="nav_left">
+    <view class="nav {{current==index? 'acctive':''}}" wx:for="{{category}}" wx:key="{{index}}" data-id="{{index}}" bindtap="chooseCategory">
+      {{item.cat_name}}
     </view>
   </view>
+
+  <view class="content_right">
+    <image class="content_img" src="http://img2.imgtn.bdimg.com/it/u=4195211176,1649837078&fm=26&gp=0.jpg">
+    </image>
+    <view class="content" wx:for="{{category[current].children}}" wx:key="{{index}}">
+      <view class="content_title">/ {{item.cat_name}} /</view>
+      <view class="content_box" >
+        <navigator url="#" class="content_logo" wx:for="{{item.children}}" wx:key="{{index}}">
+          <image class="logo_img" src="{{item.cat_icon}}"></image>
+          <view class="logo_name">{{item.cat_name}}</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

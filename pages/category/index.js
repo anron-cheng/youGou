@@ -1,66 +1,36 @@
 // pages/category/index.js
+import request from "../../utils/request.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    // 分类列表
+    category:[],
+    // 用户鼠标停留时的index
+    current:0
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
 
+  onLoad() {
+    request({
+      url:"/categories",
+    }).then(res=>{
+      console.log(res)
+      this.setData({
+        category:res.data.message
+      })
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  chooseCategory(event){
+    console.log(event)
+    const { id } = event.target.dataset
+    this.setData({
+      current:id
+    })
   }
+
+
 })

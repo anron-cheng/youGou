@@ -1,6 +1,19 @@
 /* pages/category/index.wxss */
-/* 导航栏 */
-.nav_box{
+
+
+
+.category_box {
+  display: flex;
+  position: fixed;
+  top: 100rpx;
+  bottom: 0;
+}
+/* 左边导航栏 */
+.nav_left {
+  overflow-y: auto;
+}
+
+.nav {
   width: 198rpx;
   height: 100rpx;
   background-color: #f4f4f4;
@@ -8,4 +21,55 @@
   line-height: 100rpx;
   font-size: 26rpx;
   font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+.acctive{
+  background-color: #fff;
+  color: red;
+  position: relative;
+}
+.acctive::before{
+  display: block;
+  content: '';
+  position: absolute;
+  top: 20rpx;
+  height: 60rpx;
+  width: 2px;
+  background-color: red;
+}
+
+/* 内容 */
+.content_right{
+  padding: 20rpx 16rpx 0 16rpx;
+  flex: 1;
+  overflow-y: auto;
+}
+.content_img{
+  width: 520rpx;
+  height: 180rpx;
+}
+.content_title{
+  padding: 40rpx 0;
+  text-align: center;
+}
+.content_box{
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+.content_logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%
+}
+.logo_img{
+  width: 120rpx;
+  height: 120rpx;
+}
+.logo_name{
+  padding-top: 10rpx;
+  font-size: 25rpx;
 }

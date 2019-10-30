@@ -1,7 +1,7 @@
 /* components/search.wxss */
 .search{
   background-color: red;
-  padding: 36rpx 16rpx ;
+  padding: 20rpx 16rpx ;
 }
 .search>view{
   display: flex;

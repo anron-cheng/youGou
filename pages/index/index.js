@@ -9,21 +9,21 @@ Page({
   onLoad(){
     // 请求轮播图
     request({
-      url:'/swiperdata',
+      url:'/home/swiperdata',
     }).then(res=>{
       console.log(res.data.message)
       this.setData({ background: res.data.message})
     })
     // 请求导航栏
     request({
-      url: '/catitems',
+      url: '/home/catitems',
     }).then(res => {
       console.log(res.data.message)
       this.setData({ nav: res.data.message })
     })
     // 请求楼层
     request({
-      url: '/floordata',
+      url: '/home/floordata',
     }).then(res => {
       console.log(res.data.message)
       this.setData({ floorData: res.data.message })
