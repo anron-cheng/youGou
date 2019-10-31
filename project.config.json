@@ -48,9 +48,9 @@
 			"list": [
 				{
 					"id": 0,
-					"name": "pages/goods/index",
-					"pathName": "pages/goods/index",
-					"query": "query=电视",
+					"name": "pages/detail/index",
+					"pathName": "pages/detail/index",
+					"query": "goods_id=57444",
 					"scene": null
 				}
 			]

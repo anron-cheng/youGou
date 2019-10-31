@@ -1,0 +1,55 @@
+<!--pages/detail/index.wxml-->
+<!-- 轮播图 -->
+<view class="box">
+<view class="page-section page-section-spacing swiper">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="slide">
+    <block wx:for="{{goods_detail.pics}}" wx:key="{{index}}">
+      <swiper-item>
+        <image class="swiper-item" src="{{item.pics_big}}" mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 价格 -->
+<view class="price">
+  ￥{{goods_detail.goods_price}}
+</view>
+<!-- 商品名称 -->
+<view class="goods_info">
+  <view class="goods_name">
+    {{goods_detail.goods_name}}
+  </view>
+  <view class="goods_start">
+    <view class="iconfont icon-shoucang"></view>
+    <view>收藏</view>
+  </view>
+</view>
+<view class="express">
+  快递： 免运费
+</view>
+<!-- 促销 -->
+<view class="sales">
+  <text class="sales_name">促销</text>
+  <text class="sales_price">满300减30元</text>
+</view>
+<!-- 详细图 -->
+<rich-text nodes="{{goods_detail.goods_introduce}}" bindtap="tap"></rich-text>
+<!-- 底部 -->
+<view class="floot">
+  <view class="floot_left">
+    <view class="service">
+      <text class="iconfont icon-kefu"></text>
+      <button open-type="contact" class="service_button"></button>
+      <view>联系客服</view>
+    </view>
+    <navigator url="/pages/cart/index" open-type="switchTab" class="cart">
+      <text class="iconfont icon-gouwuche"></text>
+      <view>购物车</view>
+    </navigator>
+  </view>
+  <view class="floot_right">
+    <view class="jion">加入购物车</view>
+    <view class="buy">立即购买</view>
+  </view>
+</view>
+</view>
