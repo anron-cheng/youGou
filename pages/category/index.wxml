@@ -14,7 +14,8 @@
     <view class="content" wx:for="{{category[current].children}}" wx:key="{{index}}">
       <view class="content_title">/ {{item.cat_name}} /</view>
       <view class="content_box" >
-        <navigator url="#" class="content_logo" wx:for="{{item.children}}" wx:key="{{index}}">
+        <navigator  class="content_logo" wx:for="{{item.children}}" wx:key="{{index}}"
+        url="/pages/goods/index?query={{item.cat_name}}">
           <image class="logo_img" src="{{item.cat_icon}}"></image>
           <view class="logo_name">{{item.cat_name}}</view>
         </navigator>

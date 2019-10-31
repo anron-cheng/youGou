@@ -1,4 +1,5 @@
 /* components/search.wxss */
+@import '/common/icon.wxss';
 .search{
   background-color: red;
   padding: 20rpx 16rpx ;
