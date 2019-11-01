@@ -2,7 +2,7 @@
 <!-- 搜索头部 -->
  <view class="search">
     <view>
-    <text class="iconfont iconsearch"></text>
+    <icon class="icont_search" type="search" size="30rpx"></icon>
     <input type="text" placeholder="请输入想要搜索的商品">{{category}}</input>
     </view>
   </view>

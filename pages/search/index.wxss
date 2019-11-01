@@ -1,0 +1,55 @@
+/* pages/search/index.wxss */
+/* 搜索 */
+.search{
+  display: flex;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  padding: 20rpx 16rpx ;
+}
+.icont_search{
+  line-height: 0rpx;
+}
+.search>view{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 60rpx;
+  padding: 0 30rpx;
+  border-radius: 5px; 
+  background-color: white;
+  color: #999;
+  font-size: 24rpx;
+}
+.cancel{
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 58rpx;
+  width: 158rpx;
+  height: 60rpx;
+}
+/* 搜索历史标题 */
+.history_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  font-size: 28rpx;
+}
+/* 搜索历史内容 */
+.history_containe{
+  padding: 0 17rpx;
+}
+.history_content{
+  display: inline-block;
+  padding: 22rpx 24rpx;
+  font-size: 23rpx;
+  font-weight: 600;
+  color: #3b3b3b;
+  background-color: #dddddd;
+  margin: 0 30rpx 18rpx 0;
+  max-width: 280rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
