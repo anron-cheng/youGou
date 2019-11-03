@@ -95,7 +95,7 @@
   display: flex;
   width: 60%;
 }
-.jion,.buy{
+.join,.buy{
   width: 50%;
   font-size: 30rpx;
   line-height: 100rpx;

@@ -20,7 +20,8 @@
 </view>
 <!-- 商品详情 -->
 <view class="goods">
-  <navigator class="goods_boxs" wx:for="{{newGoods}}" wx:key="{{index}}" url="/pages/detail/index?goods_id={item.goods_id}}">
+  <navigator class="goods_boxs" wx:for="{{newGoods}}" wx:key="{{index}}" 
+  url="/pages/detail/index?goods_id={{item.goods_id}}">
     <image class="goods_img" src="{{item.goods_small_logo? item.goods_small_logo:'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=315114225,454539166&fm=26&gp=0.jpg'}}"
     mode="widthFix"></image>
     <view class="goods_detail">

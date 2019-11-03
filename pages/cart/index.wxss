@@ -1,1 +1,187 @@
 /* pages/cart/index.wxss */
+.noAddress{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 208rpx;
+  width: 100%;
+}
+
+.noAddress_set{
+  background-color: #00b26a;
+  color: white;
+}
+.hasAddress{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 45rpx 18rpx 80rpx 18rpx;
+  height: 240rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  background-color: rgba(214, 213, 213, 0.205);
+  position: relative;
+}
+.userInfo{
+  display: flex;
+  justify-content: space-between;
+}
+.User_connect{
+  font-size: 16px;
+  color: #777;
+}
+.userNum{
+  display: flex;
+  justify-content: space-between;
+  width: 300rpx;
+  padding: 0 18rpx;
+}
+.separate{
+  position: absolute;
+  bottom: 20rpx;
+  left: 0;
+  height: 14rpx;
+  width: 100%;
+}
+.goods_store{
+  padding: 30rpx 0 30rpx 35rpx ;
+  font-size: 30rpx;
+  border-bottom: 1px solid #999;
+}
+.goods_logo{
+  font-size: 30rpx;
+  color: #999;
+}
+.goods{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25rpx;
+}
+.goods_list{
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding-bottom: 25rpx;
+  border-bottom: 1px solid #999
+}
+.userChoose{
+  text-align: center;
+  line-height: 160rpx;
+   width: 88rpx;
+}
+.userChoose>icon{
+
+}
+.goods_img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.goods_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:0 20rpx;
+  flex: 1
+}
+.goods_name{
+  font-size: 28rpx;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.goods_detail{
+  height: 52rpx;
+}
+.goods_detail,.goods_num{
+  display: flex;
+  justify-content: space-between;
+}
+.goods_price{
+  color: #eb4551;
+  font-size: 28rpx;
+}
+.goods_price>text{
+  font-size: 40rpx;
+}
+.goods_btn{
+  font-size: 30rpx;
+  line-height: 40rpx;
+  text-align: center;
+  width: 60rpx;
+  border-radius: 0;
+  border: 2px solid #666;
+  padding: 0 
+}
+.goods_num>text{
+  font-size: 30rpx;
+  padding: 0 35rpx;
+  line-height: 52rpx;
+}
+.goods_num>input{
+  text-align: center;
+  width: 50px
+}
+
+/* 购物车没有商品时 */
+.no_goods{
+  padding-top: 200rpx;
+  text-align: center;
+}
+.no_goods>image{
+  width: 300rpx;
+  height: 300rpx;
+}
+.noGoods_tip>navigator{
+  display: initial;
+  color: skyblue;
+}
+/* 总价格 */
+.total{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 97rpx;
+  background-color: white;
+}
+.total_choose{
+  width: 30%;
+  font-size: 30rpx; 
+}
+.total_choose>icon{
+  padding: 0 30rpx;
+}
+.total_price{
+  flex: 1;
+  padding-left: 25rpx;
+  font-size: 30rpx;
+}
+.total_symbol{
+  font-size: 25rpx;
+  color: red;
+}
+.total_money{
+  font-size: 35rpx;
+  color: red
+}
+.total_postage{
+  color: #aaa;
+}
+.total_submit{
+  width: 30%;
+  height: 100%;
+  line-height: 97rpx;
+  font-size: 35rpx;
+  background-color: red;
+  color: white;
+  border-radius: 0;
+}
+.has_goods{
+  margin-bottom: 97rpx;
+}

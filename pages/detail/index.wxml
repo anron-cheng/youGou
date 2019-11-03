@@ -48,8 +48,8 @@
     </navigator>
   </view>
   <view class="floot_right">
-    <view class="jion">加入购物车</view>
-    <view class="buy">立即购买</view>
+    <view class="join" bindtap="joinCart">加入购物车</view>
+    <view class="buy" bindtap="newBuy">立即购买</view>
   </view>
 </view>
 </view>
